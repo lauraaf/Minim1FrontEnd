@@ -41,9 +41,12 @@ export class LoginComponent {
       console.log('Usuario loggejat correctament: ', response);
       //Recollim token del header 'auth-token'
       const token = response.body.token;
+      const id = response.body.id;
       //Guardem el token a sessionStorage
       if(token){
         sessionStorage.setItem('auth-token', token);
+        //Guardem el id del usuari
+        localStorage.setItem('id.User', id);
         console.log('Token almacenado', token);
         // Redirigeix a la pàgina d'inici si la resposta és correcta
         this.router.navigate(['/home']); // Redirigeix a /home

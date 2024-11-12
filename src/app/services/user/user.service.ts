@@ -14,8 +14,6 @@ export class UserService {
   private apiUrl = `${environment.apiUrl}/user`;
   constructor(private http: HttpClient) { }
   
-  
-
   // Obtenir tots els usuaris
   getUsers(paginator: Paginator ): Observable<{ users: User[]; total: number }> {
     console.log(paginator);

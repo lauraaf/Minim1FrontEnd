@@ -43,7 +43,7 @@ export class UserComponent implements OnInit{
     password: '',
     actualUbication: [],
     inHome: false,
-    admin: true,
+    admin: false,
     disabled:true
   };
 
@@ -70,9 +70,9 @@ export class UserComponent implements OnInit{
             this.totalUsuarios = data.total; // Suponiendo que el servicio retorna el total de usuarios
             this.desplegado = new Array(this.usuarios.length).fill(false);
         });
-}
+  }
 
-   // Cambiar el número de elementos por página
+  // Cambiar el número de elementos por página
   onItemsPerPageChange(event: Event): void {
     const limit = (event.target as HTMLSelectElement).value;
     this.paginator.limit = +limit; // Actualizar el límite
@@ -139,7 +139,7 @@ export class UserComponent implements OnInit{
       password: '',
       actualUbication: [],
       inHome: true,
-      admin: true,
+      admin: false,
       disabled: true
     };
     this.confirmarPassword = ''; // Reiniciar el campo de confirmar contraseña

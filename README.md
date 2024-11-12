@@ -1,24 +1,7 @@
-# StayCloseFrontEnd
+# Minim1 FrontEnd
 
-> Paginació funciona, pero no se'm mostren els butons de les pagines.
-
-> Afegit un selector de elements per pagina.
+> La funció de getMessages, el que fa es creidar a la funció del backend la qual retorna els missatges no llegits del usuari el qual li passem el id per parametres de la url
 
 
-----------------------------------------------------------
-# Comandes Angular
 
-Instal·lar Angular CLI (versió 18)
-
-> npm install -g @angular/cli
-
-> ng versio ---> per mirar quina versió ha instal·lat
-
-> nmp install
-
-> npm install -g @angular/cli@18
-
-> ng serve -o
-
-Versió 1: Inicialitzat el projecte en Angular.
 
